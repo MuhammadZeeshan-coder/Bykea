@@ -27,12 +27,21 @@
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
+     /* Normal (inactive) dots */
+    .carousel-indicators [data-bs-target] {
+        background-color: green;
+    }
+
+    /* Active dot */
+    .carousel-indicators .active {
+        background-color: darkgreen;
+    }
 </style>
 
 <body class="bg-body-tertiary py-0">
     <!--Navbar Start-->
-    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary sticky-top navbar-expand-lg container-fluid ">
+        <div class="container">
             <a class="navbar-brand" href="./index.html"><img src="./assets/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -105,7 +114,37 @@
         </div>
     </nav>
     <!-- navbar end -->
-    
+     <!--Section 01-->
+    <section class="container-fluid one-about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12 px-5">
+                    <h1 class="main-heading-about">Social Impact
+                    </h1>
+                    <p class="text-white main-paragraph-about">Empowering the community by creating means and opportunity for social growth of society.</p>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <img src="https://bykea.com/wp-content/uploads/2020/03/MonumentsWout.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section 02-->
+    <section class="container-fluid">
+        <div class="container mt-5">
+            <h6 class="text-dark">Impacting Communities</h6>
+            <p class="fs-5">We at Bykea aim to empower the community and expand the horizons of business in Pakistan by eliminating barriers faced by the common people and small business owners while trying to touch and improve as many lives in Pakistan to create a stronger community and impact society on a large scale.</p>
+        </div>
+    </section>
+     <!--Section 03-->
+    <section class="container-fluid">
+        <div class="container mt-5">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
 
     <!-- bootsrap cdn JS link. -->,
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
