@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Navbar*/
+a.navbar-brand{
+    padding-left: 45px;
+}
+a.nav-link{
+    color: #23A455;
+    font-weight: 400;
+    font-size: 18px;
+}
+a.nav-link:hover{
+    color: green;
+}
+div.item{
+    margin-left: 420px;
+}
+/* section 01 */
+h1.main-heading{
+    margin-top: 120px;
+    font-size: 35px;
+    color: #00AA2F;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+/*section 02*/
+h2.tabs-heading{
+    color: #00AA2F;
+    margin-top: 30px;
+}
+p.tabs-paragraph{
+    color: #000;
+    margin-bottom: 30px;
+}
+a.tabs-read{
+    color: #00AA2F;
+    text-decoration: none;
+}
+/*section 03*/
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(25, 135, 84, 0.3); /* Bootstrap green */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(42%) sepia(93%) saturate(1350%) hue-rotate(85deg) brightness(95%) contrast(90%);
+}
+
+/*section 04*/
+h4.sec-4-heading{
+    margin-top: 30px;
+    font-weight: 700;
+}
+/* Section 06*/
+div.box{
+    box-shadow: 0 0 10px;
+    border-radius: 12px;
+}
+/*sectiion 07*/
+h2.semi-heading{
+    text-transform: capitalize;
+    font-size: 38px;
+}
+div.about{
+  padding-right: 110px;
+} 
+div.about p{
+   font-size: 17px;
+} 
+button.Learn{
+    padding: 8px 11px;
+    border-radius: 16px;
+    background-color: #242948;
+    color: #fff;
+    font-weight: 600;
+}
+/*Section 09*/
+
+footer{
+    background-color: #242948;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*ABOUT PAGE*/
+a.dropdown-item{
+    color: #00AA2F;
+}
+a.dropdown-item:hover{
+    color: #00AA2F;
+    background-color: lightgray;
+}
+section.one-about{
+    background-color: #00AA2F;
+}
+h1.main-heading-about{
+    color: #fff;
+}
+p.main-paragraph-about{
+    font-size: 18px;
+}
+h2.semi-heading-about{
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 39px;
+    margin-top: 120px;
+}
+p.semi-paragraph-about{
+    font-size: 21px;
+    margin-right: 120px;
+}
