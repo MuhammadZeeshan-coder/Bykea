@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS sheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootsrap cdn CSS link. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
+
+    <title>Bykea | FAQs</title>
+</head>
+<style>
+    .navbar-toggler {
+        border-color: green;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Normal (inactive) dots */
+    .carousel-indicators [data-bs-target] {
+        background-color: green;
+    }
+
+    /* Active dot */
+    .carousel-indicators .active {
+        background-color: darkgreen;
+    }
+
+    /* Inactive pills text color */
+    .nav-pills .nav-link {
+        color: #00AA2F;
+    }
+
+    /* Active pill background + text */
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: #00AA2F;
+        color: #fff;
+    }
+
+    /* Optional: hover effect for inactive buttons */
+    .nav-pills .nav-link:not(.active):hover {
+        background-color: rgba(0, 170, 47, 0.1);
+        color: #00AA2F;
+    }
+</style>
+
+<body class="bg-body-tertiary py-0">
+    <!--Navbar Start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/logo/logo.png" alt="">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../About Pages/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="../About Pages/social-impact.html">Social Impact</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Press & Media.html">Press & Media</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Our Team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="../About Pages/media.html">Media, Vision & Values</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Accessibility.html">Accessibility</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Safety.html">Safety</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../Service Page/Service.html">Coperate Commute</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Mobility</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Commerce</a>
+                                </li>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Bykea For Business</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../partner.html">Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../franchise.html">Franchises</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Help Center
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./FAQ.html">Frequently Asked Questions</a></li>
+                            <li><a class="dropdown-item" href="./Contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Vulnerability Disclosure Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Careers</a>
+                    </li>
+                    <button class="btn btn-nav ms-5 text-white py-0 px-3" onclick="window.location.href='./Contact.html'">Contact Bykea</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!--Header-->
+    <div class="container-fluid bg-contact">
+        <img src="./aseets-contact/header2.png" class="img-fluid">
+    </div>
+    <!--Section 02-->
+    <section class="container-fluid mt-5 bg-white py-4">
+        <div class="container">
+            <h6>We've Got The Answers</h6>
+            <p>We’ve answered some of our most common queries but you can contact us directly for any further
+                information. Our call center representatives are available for you 24/7. Call us at 021 38654444 or you
+                can email us at cs@bykea.com </p>
+        </div>
+        <!--Tabs Start-->
+        <div class="container mt-5">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Customers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Partners</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Business</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <!--Cusomer Tab-->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <h2 class="mt-4">Customers:</h2>
+                    <p class="mt-4">
+                        <span class="question">I got into an accident, now what?</span> <br>
+                        Whether you are a rider or a driver, we have you covered. Your safety is our utmost priority,
+                        contact us at +92 21-38654444 to find out your coverage.
+                    </p>
+                    <p>
+                        <span class="question">Can I use BYKEA without a smartphone?</span> <br>
+                        Yes you can! We pride ourselves for making services available for everyone in Pakistan. Just
+                        give us a call at +92 307-1234567 to book your Bykea partner.
+                    </p>
+                    <p>
+                        <span class="question">How can I start a BYKEA Franchise?</span> <br>
+                        Owning a Bykea franchise offers a unique opportunity of being your own boss and empowering your
+                        local community. To read details about how to become a Bykea Franchisee, visit our Bykea
+                        Franchise page.
+                    </p>
+                    <p>
+                        <span class="question">How do I unlock by Bykea Account?</span> <br>
+                        Unlocking your Bykea Account is easy. Download the Jazz Cash App or go to the nearest Jazz Cash
+                        Kiosk to unlock your account.
+                    </p>
+                    <p>
+                        <span class="question">How do I create an account?</span> <br>
+                        Download the Bykea App for your Google Play Store or Apple App Store, verify your phone number,
+                        and you are ready to book your first ride.
+                    </p>
+                </div>
+                <!--Partners Tab-->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    <h2 class="mt-4">Partners:</h2>
+                    <p class="mt-4">
+                        <span class="question">How do I become a Bykea Partner?</span> <br>
+                        Applying to be a Bykea partner is simple. Download the Bykea Partner app or visit the nearest
+                        Bykea Franchise to register. For more details visit the Bykea Partner Page.
+                    </p>
+                    <p>
+                        <span class="question">I want to become a Bykea Partner but don’t own a bike.</span> <br>
+                       We will connect you with a financial institution that provides easy installment plans or leases. In some areas, a Bykea partner can earn up to 5 times the monthly installment – making owning a bike easy.
+                    </p>
+                     <p>
+                        <span class="question">Are Bykea Partners insured?</span> <br>
+                      Safety of our customers and partners is the utmost priority. We provide our partners and customers an option of getting themselves insured during the ride.
+                    </p>
+                     <p>
+                        <span class="question">How will the loan be disbursed?</span> <br>
+                      We will disburse the loan into your Bykea Wallet that you can withdraw into any bank or branchless banking account to advance the cash.
+                    </p>
+                     <p>
+                        <span class="question">Why are other Driver-Partners offered a higher or lower Upfront Cash amount?</span> <br>
+                       The Upfront Cash amount offered to each Driver-Partner under the program is determined based on multiple factors including the partner’s past incentive earnings and driving or delivery history.
+                    </p>
+                </div>
+                <!--Business Tab-->
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <h2 class="mt-4">Business:</h2>
+                    <p class="mt-4">
+                        <span class="question">My parcel got damaged during delivery, now what?</span> <br>
+                       Our Bykea partners are trained and understand the importance of delivering your items with care. However, we provide an added layer of safety through an opt-in insurance for parcels so even if there is any odd chance that it gets damaged, your valuable items are completely protected. To find out details about how to claim your coverage, contact us at +92 21 38654444.
+                    </p>
+                    <p>
+                        <span class="question">How can I start a Bykea Franchise?</span> <br>
+                       Owning a Bykea franchise offers a unique opportunity of being your own boss and empowering your local community. To read details about how to become a Bykea Franchisee, visit our Bykea Franchise page. 
+                    </p>
+                    <p>
+                        <span class="question">Does Bykea have business solutions?</span> <br>
+                      If you are looking to ship multiple items at once instantly, our Business Panel will be perfect for you. Read more about the advantages and how to get it on our Delivery for Business page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section 09-->
+    <section class="container mt-5">
+        <h5>Customers share their experiences</h5>
+        <h2 class="mt-3">
+            A community full of stories
+        </h2>
+        <!-- carousel slider -->
+        <div class="d-flex justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide story border-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-12">
+                                <img src="../assets/Home/section-09/01.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <p>“Today I booked my first ride on BYKEA from my office at Jail Road to the railway
+                                    station, fare estimate was Rs 75 to 90. My other options are Daewoo bus cost Rs 20
+                                    but
+                                    you have to wait for at least 30 minutes to over an hour and second option was
+                                    rickshaw
+                                    at Rs 150 to 180. Bottomline, it suited me well, will surely use in the future.”​
+                                </p>
+                                <h5>
+                                    Kashif Q.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-12">
+                                <img src="../assets/Home/section-09/02.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <p>"Very useful app. Highly satisfied with their services. Quick response to any query
+                                    and very helpful in case of any complaint."
+                                </p>
+                                <h5>
+                                    Sundus S.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-12">
+                                <img src="../assets/Home/section-09/03.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <p>"Excellent bike riding app with easy to understand navigations for tracking your
+                                    rider on the app. Affordable travel cost for two wheelers having friendly riders.
+                                    Wish all the best of luck!"</p>
+                                <h5>
+                                    Zubair A.
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="container-fluid text-white mt-5 py-5">
+        <div class="container">
+            <div class="d-flex justify-content-evenly row">
+                <div class="col-12 col-lg-3 col-md-6 mt-3">
+                    <img src="../assets/footer/01.png" alt="">
+                    <p class="mt-4">Moving Pakistan Forward</p>
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i> 021 38654444
+                        <br>
+                        <i class="fa-solid fa-envelope"></i> info@bykea.com
+                    </a>
+                    <br>
+                    <br>
+                    <a href=""><img src="../assets/Home/section-04/apple.png" alt=" " width="100" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/app.png" alt=" " width="100" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/play.png" alt=" " width="100" class="mt-2"></a>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>About</h5>
+                    <a href="">Company</a> <br>
+                    <a href="">Team</a> <br>
+                    <a href="">Mission, Vision & Values</a> <br>
+                    <a href="">Social Impact</a> <br>
+                    <a href="">Press & Media</a> <br>
+                    <a href="">Careers</a> <br>
+                    <a href="">Franchise</a> <br>
+                    <a href="">Security</a> <br>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Products</h5>
+                    <a href="">Ride</a> <br>
+                    <a href="">Insurance</a> <br>
+                    <a href="">Shops</a> <br>
+                    <a href="">Delivery</a> <br>
+                    <a href="">Bykea For Business</a> <br>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Bykea Partner</h5>
+                    <a href="">About partner</a> <br>
+                    <a href="">Help Center</a> <br>
+                    <a href="">FAQs</a> <br>
+                    <a href="">Contact Us</a> <br>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-evenly d-flex">
+                <div class="col">
+                    All Rights Reserved Bykea Pakistan
+                </div>
+                <div class="col d-flex gap-3">
+                    <a href="">Privacy policy</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Safety</a>
+                    <a href="">Terms</a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootsrap cdn JS link. -->,
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

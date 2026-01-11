@@ -1,14 +1,32 @@
 @media only screen and (max-width:991px) {
-    div.about{
+    div.about {
         text-align: center;
         padding-right: 0;
     }
-    button.btn-nav{
+
+    button.btn-nav {
         display: none;
     }
+    p.semi-paragraph-about {
+        margin-right: 0;
+    }
 }
+
 @media only screen and (max-width:767px) {
-    a.navbar-brand{
+    a.navbar-brand {
         padding-left: 0;
+    }
+
+    h2.semi-heading-about {
+        font-size: 30px;
+    }
+
+    p.semi-paragraph-about {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    div.bg {
+        height: 380px;
     }
 }

@@ -7,6 +7,12 @@
 a.navbar-brand{
     padding-left: 45px;
 }
+button.btn-nav {
+    background-color: #00AA2F;
+}
+button.btn-nav:hover{
+    background-color: #00AA2F;
+}
 a.nav-link{
     color: #23A455;
     font-weight: 400;
@@ -124,7 +130,7 @@ div.bg{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 280px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,4 +143,41 @@ div.bg{
 div.cards-media{
     border-radius: 12px;
     box-shadow: 0 0 5px gray;
+}
+/*Service Page*/
+li.ser-sec-2 ul li a{
+    color: purple;
+    text-decoration: none;
+}
+div.ser{
+    background-color: #fff;
+    border-radius: 22px;
+    transform: translateY(-1px);
+    box-shadow: 0 0 5px lightgrey;
+}
+div.ser-box{
+    border: 2px solid #000;
+    width: 40%;
+    padding: 40px 12px;
+}
+/*Contact Page*/
+h2.contact{
+    font-family: poppins;
+    font-weight: 600;
+}
+p.locations{
+    font-family: sans-serif;
+    line-height: 40px;
+}
+span.question{
+    font-weight: 600;
+    font-size: large;
+    font-family: sans-serif;
+}
+/*Partner page*/
+div.Opportunities{
+    background-color: #fff;
+    padding: 32px 50px;
+    border-radius: 22px;
+    margin-bottom: 12px;
 }

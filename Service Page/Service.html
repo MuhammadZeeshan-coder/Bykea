@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS sheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootsrap cdn CSS link. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
+
+    <title>Bykea | Coperate commute</title>
+</head>
+<style>
+    .navbar-toggler {
+        border-color: green;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='green' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Normal (inactive) dots */
+    .carousel-indicators [data-bs-target] {
+        background-color: green;
+    }
+
+    /* Active dot */
+    .carousel-indicators .active {
+        background-color: darkgreen;
+    }
+</style>
+
+<body class="bg-body-tertiary py-0">
+    <!--Navbar Start-->
+    <nav class="navbar bg-body-tertiary navbar-expand-lg container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/logo/logo.png" alt="">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../About Pages/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="../About Pages/social-impact.html">Social Impact</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Press & Media.html">Press & Media</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Our Team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="../About Pages/media.html">Media, Vision & Values</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Accessibility.html">Accessibility</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../About Pages/Safety.html">Safety</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../Service Page/Service.html">Coperate Commute</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Mobility</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Commerce</a>
+                                </li>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Bykea For Business</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../partner.html">Partner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../franchise.html">Franchises</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Help Center
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../HelpCenter/FAQ.html">Frequently Asked Questions</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../HelpCenter/Contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Vulnerability Disclosure Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Careers</a>
+                    </li>
+                    <button class="btn btn-nav ms-5 text-white py-0 px-3" onclick="window.location.href='../HelpCenter/Contact.html'">Contact Bykea</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!--Section 01-->
+    <section class="container-fluid one-about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12 px-5">
+                    <h1 class="main-heading-about">Hassle Free Corporate Commuting Solutions
+                    </h1>
+                    <p class="text-white main-paragraph-about">Our corporate commuting solution delivers convenience, up
+                        to 40% cost savings, and safety with Monthly Carpool.</p>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <img src="./assets(service 01)/header.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section 02-->
+    <section class="container-fluid mt-5 p-4 d-none d-lg-flex">
+        <div class="container ser p-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 ps-5">
+                    <h2 style="font-weight: 600; font-family: poppins;">Bykea Carpool</h2>
+                    <h2 class="mt-4" style="font-weight: 600; font-family: poppins;">A Corporate Commuting <br>Solution
+                    </h2>
+                    <ol class="mt-4">
+                        <li class="fw-bold ser-sec-2">
+                            Fill out the form
+                            <ul>
+                                <li class="fw-normal">
+                                    Corporate clients, click this link to fill out the <br>form: <a href=""> Click
+                                        here</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold ser-sec-2">
+                            Talk to us
+                            <ul>
+                                <li class="fw-normal">
+                                    A Bykea representative will contact you and <br>
+                                    share a customized plan based on your <br>
+                                    requirements. contact us on WhatsApp at <br>
+                                    <a href="">0343-1234567</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold  ser-sec-2">
+                            Dashboard Sharing
+                            <ul>
+                                <li class="fw-normal">
+                                    Bykea will provide a dashboard to monitor <br>
+                                    your service consumption, track online <br>
+                                    payments, and access other important <br>
+                                    information.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-md-6 col-12  ps-5">
+                    <img src="./assets(service 01)/laptop.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section 03-->
+    <section class="container-fluid">
+        <div class="container mt-5 pt-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="fs-1" style="font-family: poppins; font-weight: 600;">Why Choose Bykea Corporate
+                        Commuting Solution?</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-12 text-center">
+                    <div class="Opportunities">
+                        <img src="./assets(service 01)/box1.png" class="img-fluid" alt="" width="115">
+                        <h4 class="fs-3 mt-3">Economical</h4>
+                        <p class="fs-5">Upto 40% Savings on Monthly Commute</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                    <div class="Opportunities">
+                        <img src="../assets/about/section4/02.png" class="img-fluid" alt="">
+                        <h4 class="fs-3 mt-3">Reliable</h4>
+                        <p class="fs-5">Real-Time Tracking, Safety, Insurance Feature</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                    <div class="Opportunities">
+                        <img src="./assets(service 01)/box3.png" class="img-fluid" alt="" width="84">
+                        <h4 class="fs-3 mt-3">Online Payments</h4>
+                        <p class="fs-5">Easy Online Payments</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                    <div class="Opportunities">
+                        <img src="./assets(service 01)/box4.png" class="img-fluid" alt="" width="120">
+                        <h4 class="fs-3 mt-3">One Time Payment</h4>
+                        <p class="fs-5">One Booking Sorts You For The Whole Month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-12">
+                    <h3 class="fs-1" style="font-family: poppins;">Ready to get BYKEA Carpool Service? <a href=""> Let's get in touch</a></h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col mt-3">
+                    <a href=""><img src="../assets/Home/section-04/apple.png" alt=" " width="150" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/app.png" alt=" " width="150" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/play.png" alt=" " width="150" class="mt-2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="container-fluid text-white mt-5 py-5">
+        <div class="container">
+            <div class="d-flex justify-content-evenly row">
+                <div class="col-12 col-lg-3 col-md-6 mt-3">
+                    <img src="../assets/footer/01.png" alt="">
+                    <p class="mt-4">Moving Pakistan Forward</p>
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i> 021 38654444
+                        <br>
+                        <i class="fa-solid fa-envelope"></i> info@bykea.com
+                    </a>
+                    <br>
+                    <br>
+                    <a href=""><img src="../assets/Home/section-04/apple.png" alt=" " width="100" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/app.png" alt=" " width="100" class="mt-2"></a>
+                    <a href=""><img src="../assets/Home/section-04/play.png" alt=" " width="100" class="mt-2"></a>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>About</h5>
+                    <a href="">Company</a> <br>
+                    <a href="">Team</a> <br>
+                    <a href="">Mission, Vision & Values</a> <br>
+                    <a href="">Social Impact</a> <br>
+                    <a href="">Press & Media</a> <br>
+                    <a href="">Careers</a> <br>
+                    <a href="">Franchise</a> <br>
+                    <a href="">Security</a> <br>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Products</h5>
+                    <a href="">Ride</a> <br>
+                    <a href="">Insurance</a> <br>
+                    <a href="">Shops</a> <br>
+                    <a href="">Delivery</a> <br>
+                    <a href="">Bykea For Business</a> <br>
+                </div>
+                <div class="col-12 col-lg-3 mt-3">
+                    <h5>Bykea Partner</h5>
+                    <a href="">About partner</a> <br>
+                    <a href="">Help Center</a> <br>
+                    <a href="">FAQs</a> <br>
+                    <a href="">Contact Us</a> <br>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-evenly d-flex">
+                <div class="col">
+                    All Rights Reserved Bykea Pakistan
+                </div>
+                <div class="col d-flex gap-3">
+                    <a href="">Privacy policy</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Safety</a>
+                    <a href="">Terms</a>
+                </div>
+                <div class="col">
+                    <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootsrap cdn JS link. -->,
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
