@@ -181,3 +181,6 @@ div.Opportunities{
     border-radius: 22px;
     margin-bottom: 12px;
 }
+div.tab{
+    cursor: pointer;
+}

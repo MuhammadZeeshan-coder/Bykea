@@ -37,22 +37,6 @@
     .carousel-indicators .active {
         background-color: darkgreen;
     }
-
-    /* Active tab ka h5 green */
-    .nav-pills .nav-link.active h5 {
-        color: #00AA2F;
-    }
-
-    /* Inactive tabs ka h5 black */
-    .nav-pills .nav-link h5,
-    p {
-        color: #000;
-    }
-
-    .nav-pills .nav-link.active,
-    .nav-pills .show>.nav-link {
-        background-color: transparent;
-    }
 </style>
 
 <body class="bg-body-tertiary py-0">
@@ -126,7 +110,8 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Careers</a>
                     </li>
-                    <button class="btn btn-nav ms-5 text-white py-0 px-3" onclick="window.location.href='./HelpCenter/Contact.html'">Contact Bykea</button>
+                    <button class="btn btn-nav ms-5 text-white py-0 px-3"
+                        onclick="window.location.href='./HelpCenter/Contact.html'">Contact Bykea</button>
                     </ul>
                 </div>
             </div>
@@ -217,39 +202,25 @@
         <div class="container">
             <h6>Bykea Partner</h6>
             <h2 class="fs-1">Becoming a Partner is Easy</h2>
-            <div class="d-flex align-items-center justify-content-around    ">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 gap-5 tab text-center text-md-start">
+                    <a onclick="document.getElementById('mobile').src ='./assets/partner/tab1.png'">
                         <h5>Download</h5>
                         <p>Download the Bykea partner App</p>
                     </a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <a onclick="document.getElementById('mobile').src ='./assets/partner/tab2.png'">
                         <h5>Register</h5>
                         <p>Register and verify your mobile number</p>
                     </a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-                        aria-selected="false">
+                    <a onclick="document.getElementById('mobile').src ='./assets/partner/tab3.png'">
                         <h5>Activate</h5>
-                        <p>Activate your account by providing your CNIC, drivers license, a picture, and bike registration documents within the app.</p>
+                        <p>Activate your account by providing your CNIC, drivers license, a picture, and bike registration documents
+                within the app.</p>
                     </a>
+
                 </div>
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab" tabindex="0">
-                        <img src="./assets/partner/tab1.png" class="img-fluid" alt="" width="350">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab" tabindex="0">
-                        <img src="./assets/partner/tab2.png" class="img-fluid" alt="" width="200">
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                        aria-labelledby="v-pills-messages-tab" tabindex="0">
-                        <img src="./assets/partner/tab3.png" class="img-fluid" alt="" width="200">
-                    </div>
+                <div class="col-md-6 col-12 text-center">
+                    <img src="./assets/partner/tab1.png" id="mobile" alt="" width="200">
                 </div>
             </div>
         </div>
